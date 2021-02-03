@@ -1,11 +1,9 @@
-package com.pst;
-
-
-
+import com.pst.MyBufferClass;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.ByteArrayInputStream;
 import java.util.concurrent.ConcurrentHashMap;
 
 
@@ -14,7 +12,7 @@ public class MyBufferClassTest {
     @Before
         public void initMap(){
         this.myBufferClass = new MyBufferClass();
-        this.myBufferClass.setMap(new ConcurrentHashMap<>());
+        this.myBufferClass.setMap(new ConcurrentHashMap<Integer, ByteArrayInputStream>());
 
     }
 

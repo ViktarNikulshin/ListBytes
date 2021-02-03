@@ -10,7 +10,7 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class MyBufferClass {
-    private ConcurrentHashMap<Integer, ByteArrayInputStream> map = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<Integer, ByteArrayInputStream> map = new ConcurrentHashMap<Integer, ByteArrayInputStream>();
     private  AtomicInteger atomicInteger = new AtomicInteger(0);
     ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
     Lock readLock = readWriteLock.readLock();
