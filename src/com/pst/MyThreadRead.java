@@ -11,8 +11,6 @@ public class MyThreadRead implements Runnable {
 
     @Override
     public void run() {
-        synchronized (this) {
-            myBufferClass.getBytes(id);
-        }
+        myBufferClass.getBytes(id);
     }
 }

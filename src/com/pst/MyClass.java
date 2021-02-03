@@ -12,7 +12,7 @@ public class MyClass {
         Thread thread1 = new Thread(new MyThreadAdd(myClass, bytes1));
         Thread thread2 = new Thread(new MyThreadAdd(myClass, bytes2));
         Thread thread3 = new Thread(new MyThreadAdd(myClass, bytes3));
-        Thread thread4 = new Thread(new MyThreadRead(myClass,3));
+        Thread thread4 = new Thread(new MyThreadRead(myClass,2));
 
         thread.start();
         thread1.start();
